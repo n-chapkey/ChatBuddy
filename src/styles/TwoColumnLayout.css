@@ -17,6 +17,7 @@ html, body{
     flex-direction: column;
     overflow: hidden;
     background-color: green;
+    max-width: 68px;
 }
 
 .bigColumn{
@@ -26,3 +27,4 @@ html, body{
     overflow: hidden;
     background-color: black;
 }
+
