@@ -1,0 +1,9 @@
+#root {
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* If you want to make sure it takes the full viewport: */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
