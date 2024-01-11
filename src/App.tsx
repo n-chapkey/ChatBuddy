@@ -1,16 +1,17 @@
 import './App.css'
 import React from 'react'
-import TwoColumnLayout from './components/TwoColumnLayout'
+import TwoColumnLayout from './components/Layouts/TwoColumnLayout'
 import './styles/global.css'
-import ContactList from './components/ContactList'
-import DirectMessage from './components/DirectMessage'
+import ContactList from './components/Contacts/ContactList'
+import DirectMessage from './components/Messages/DirectMessage'
+
 
 function App() {
   return (
 
       <TwoColumnLayout 
         smallColumn={<ContactList />} 
-        bigColumn={<DirectMessage sender='Bob' message='Hello World'/>}>
+        bigColumn={<DirectMessage />}>
       </TwoColumnLayout>
 
 

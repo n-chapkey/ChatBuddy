@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/TwoColumnLayout.css';
+import '../../styles/TwoColumnLayout.css';
 
 type TwoColumnLayoutProps = {
     smallColumn: React.ReactNode;

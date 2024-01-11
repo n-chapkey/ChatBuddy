@@ -1,0 +1,16 @@
+/* ContactList.css */
+.contact-list {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-name {
+    margin-left: 10px;
+  }

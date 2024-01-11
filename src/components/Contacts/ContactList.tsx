@@ -1,9 +1,12 @@
 import React from 'react';
+import ContactBubble from './ContactBubble';
+import '../../styles/ContactList.css';
 
 interface Contact {
     id: number;
     name: string;
     status: string;
+    avatarUrl?: string;
 }
 
 const ContactList: React.FC = () => {
@@ -16,15 +19,12 @@ const ContactList: React.FC = () => {
 
     return (
         <div className="contact-list">
-            {contacts.map((contact) => (
-                <div key={contact.id} className="contact">
-                    <div className="contact-name">{contact.name}</div>
-                    <div className={`contact-status ${contact.status.toLowerCase()}`}>
-                        {contact.status}
-                    </div>
-                </div>
-            ))}
+      {contacts.map(contact => (
+        <div key={contact.id} className="contact-item">
+          <ContactBubble name={contact.name} avatarUrl={contact.avatarUrl} />
         </div>
+      ))}
+    </div>
     );
 };
 
